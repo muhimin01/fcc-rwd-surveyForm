@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 id="title">User stories</h1>
+            <p id="description">Share your stories here!</p>
+        </div>
+
+        <form id="survey-form" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label id="name-label" for="name">Name <input id="name" type="text" class="inline"
+                        placeholder="John Doe" required></label>
+                <label id="email-label" for="email">Email <input id="email" type="email"
+                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="inline" placeholder="email@domain.com"
+                        required></label>
+                <label id="number-label" for="number">Age <input id="number" type="number" min="0" max="100"
+                        class="inline" placeholder="25"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Story</legend>
+                <label for="dropdown"> Genre:
+                    <select id="dropdown" required>
+                        <option value="">(select one)</option>
+                        <option value="horror">Horror</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="adventure">Adventure</option>
+                    </select>
+                </label>
+
+                <label>Content</p>
+                <input id="radio-one" type="radio" name="content" value="text-only"><label for="radio-one"> Text
+                    only</label>
+                <input id="radio-two" type="radio" name="content" value="text-illustration"><label for="radio-two"> Text
+                    and illustrations</label>
+
+                <p>Format</p>
+                <input id="checkbox-one" type="checkbox" value="digital"><label for="checkbox-one"> Digital</label>
+                <input id="checkbox-two" type="checkbox" value="print"><label for="checkbox-two"> Print</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Summary</legend>
+                <label for="text-area">Summary of the story <textarea id="text-area" rows="5"
+                        placeholder="A man and his dog..."></textarea></label>
+            </fieldset>
+
+            <input id="submit" type="submit">
+        </form>
+    </body>
+
+</html>

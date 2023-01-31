@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1b1b32;
+    color: aliceblue;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+select {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    margin-top: 10px;
+    width: 98%;
+}
+
+.header {
+    text-align: center;
+}
+
+.inline {
+    display: block;
+    width: unset;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 98%;
+}
